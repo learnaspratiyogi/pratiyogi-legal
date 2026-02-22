@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Pratiyogi</title>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #FF6B1A;
+    --deep: #1A1A2E;
+    --ink: #0F0F1A;
+    --cream: #FFF8F0;
+    --muted: #6B6B80;
+    --border: #E8E0D5;
+    --accent: #FF6B1A22;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  header {
+    background: var(--ink);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--saffron);
+  }
+
+  .logo-mark {
+    width: 40px; height: 40px;
+    background: var(--saffron);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .logo-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+
+  .logo-text span { color: var(--saffron); }
+
+  .hero {
+    background: linear-gradient(135deg, var(--ink) 0%, #16213E 100%);
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    background: var(--saffron);
+    opacity: 0.07;
+  }
+
+  .hero h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 12px;
+  }
+
+  .hero h1 span { color: var(--saffron); }
+
+  .hero p {
+    color: #AAA;
+    font-size: 14px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    border: 1px solid var(--saffron);
+    color: var(--saffron);
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 50px 24px 80px;
+  }
+
+  .section {
+    background: white;
+    border-radius: 16px;
+    padding: 36px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--saffron);
+    animation: fadeUp 0.5s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .section:nth-child(2) { animation-delay: 0.05s; }
+  .section:nth-child(3) { animation-delay: 0.10s; }
+  .section:nth-child(4) { animation-delay: 0.15s; }
+  .section:nth-child(5) { animation-delay: 0.20s; }
+
+  .section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--saffron);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section h2 .num {
+    background: var(--saffron);
+    color: white;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .section p { color: #444; margin-bottom: 10px; }
+  .section p:last-child { margin-bottom: 0; }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .tag {
+    background: var(--accent);
+    border: 1px solid #FF6B1A44;
+    color: var(--saffron);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .no-collect {
+    background: #F0FFF4;
+    border: 1px solid #86EFAC;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 14px;
+    color: #166534;
+    font-size: 13.5px;
+  }
+
+  .no-collect strong { display: block; margin-bottom: 4px; color: #15803D; }
+
+  .contact-box {
+    background: var(--ink);
+    color: white;
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .contact-box h3 { color: var(--saffron); margin-bottom: 8px; font-size: 18px; }
+  .contact-box p { color: #BBB; font-size: 14px; }
+  .contact-box a { color: var(--saffron); text-decoration: none; font-weight: 500; }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">प</div>
+  <div class="logo-text">Prati<span>yogi</span></div>
+</header>
+
+<div class="hero">
+  <div class="badge">Legal Document</div>
+  <h1>Privacy <span>Policy</span></h1>
+  <p>Last updated: February 2026 &nbsp;|&nbsp; Effective immediately upon app use</p>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <h2><span class="num">1</span> Introduction</h2>
+    <p>Welcome to <strong>Pratiyogi</strong>, a competitive exam preparation app designed to help students practice calculations, solve Previous Year Questions (PYQ), stay updated with current affairs, and track their performance.</p>
+    <p>This Privacy Policy explains how we collect, use, and protect your information when you use our app. By using Pratiyogi, you agree to the terms described in this policy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">2</span> Information We Collect</h2>
+    <p>We collect only the minimum data necessary to provide our services:</p>
+    <div class="tag-list">
+      <span class="tag">Full Name</span>
+      <span class="tag">Email Address</span>
+      <span class="tag">Quiz Scores</span>
+      <span class="tag">Questions Attempted</span>
+      <span class="tag">Practice Sessions</span>
+      <span class="tag">App Activity Data</span>
+      <span class="tag">Device Type</span>
+    </div>
+    <div class="no-collect">
+      <strong>✅ What we do NOT collect:</strong>
+      We do not collect your photos, camera, microphone, location, contacts, call logs, SMS, or any other sensitive device data. Pratiyogi operates without accessing your personal files or media.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">3</span> How We Use Your Information</h2>
+    <p>The information we collect is used solely for the following purposes:</p>
+    <p>• To create and manage your user account securely.</p>
+    <p>• To display your performance dashboard, track scores, and show progress over time.</p>
+    <p>• To personalize your practice experience based on attempted questions.</p>
+    <p>• To maintain app security and prevent fraudulent activity.</p>
+    <p>• To improve app features and content quality based on aggregate usage patterns.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span> Data Storage & Security</h2>
+    <p>Your data is securely stored using <strong>Supabase</strong>, a trusted backend-as-a-service platform. We implement Row Level Security (RLS) which ensures that each user can only access their own data — no user can see another user's data.</p>
+    <p>All data transmission between the app and our servers is encrypted using industry-standard HTTPS/TLS protocols.</p>
+    <p>We retain your data as long as your account is active. If you delete your account, all associated data will be permanently removed within 30 days.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span> Third-Party Services</h2>
+    <p>Pratiyogi uses the following trusted third-party services to operate:</p>
+    <p>• <strong>Supabase</strong> — Database and authentication (supabase.com/privacy)</p>
+    <p>• <strong>Google Play Services</strong> — App distribution on Android</p>
+    <p>We do not sell, rent, or trade your personal information to any third party for marketing or advertising purposes.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">6</span> Children's Privacy</h2>
+    <p>Pratiyogi is intended for students aged <strong>13 years and above</strong>. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child under 13 has provided us with personal data, please contact us immediately and we will delete that information.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">7</span> Your Rights</h2>
+    <p>You have the right to:</p>
+    <p>• <strong>Access</strong> the personal data we hold about you.</p>
+    <p>• <strong>Correct</strong> any inaccurate information in your profile.</p>
+    <p>• <strong>Delete</strong> your account and all associated data at any time from the app settings.</p>
+    <p>• <strong>Export</strong> your data upon request by contacting us.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">8</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Any significant changes will be notified within the app. Continued use of Pratiyogi after updates constitutes your acceptance of the revised policy.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Questions about your privacy?</h3>
+    <p>Reach out to us at <a href="mailto:learnaspratiyogi@gmail.com">learnaspratiyogi@gmail.com</a></p>
+    <p style="margin-top:6px;">We typically respond within 48 hours.</p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Pratiyogi. All rights reserved. &nbsp;|&nbsp;
+  <a href="terms.html" style="color:var(--saffron);text-decoration:none;">Terms & Conditions</a

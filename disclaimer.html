@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disclaimer — Pratiyogi</title>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --saffron: #FF6B1A;
+    --ink: #0F0F1A;
+    --cream: #FFF8F0;
+    --muted: #6B6B80;
+    --border: #E8E0D5;
+    --accent: #FF6B1A22;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.8;
+    font-size: 15px;
+  }
+
+  header {
+    background: var(--ink);
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--saffron);
+  }
+
+  .logo-mark {
+    width: 40px; height: 40px;
+    background: var(--saffron);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Tiro Devanagari Hindi', serif;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .logo-text { font-size: 22px; font-weight: 600; color: white; }
+  .logo-text span { color: var(--saffron); }
+
+  .hero {
+    background: linear-gradient(135deg, var(--ink) 0%, #16213E 100%);
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: var(--saffron);
+    opacity: 0.05;
+  }
+
+  .badge {
+    display: inline-block;
+    background: var(--accent);
+    border: 1px solid var(--saffron);
+    color: var(--saffron);
+    padding: 5px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 { font-size: 36px; font-weight: 600; color: white; margin-bottom: 12px; }
+  .hero h1 span { color: var(--saffron); }
+  .hero p { color: #AAA; font-size: 14px; }
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 50px 24px 80px;
+  }
+
+  .alert-banner {
+    background: linear-gradient(135deg, var(--saffron), #E85D04);
+    color: white;
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: fadeUp 0.4s ease both;
+  }
+
+  .alert-banner h2 { font-size: 20px; margin-bottom: 8px; }
+  .alert-banner p { font-size: 14px; opacity: 0.9; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .section {
+    background: white;
+    border-radius: 16px;
+    padding: 36px;
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--saffron);
+    animation: fadeUp 0.5s ease both;
+  }
+
+  .section:nth-child(2) { animation-delay: 0.05s; }
+  .section:nth-child(3) { animation-delay: 0.10s; }
+  .section:nth-child(4) { animation-delay: 0.15s; }
+  .section:nth-child(5) { animation-delay: 0.20s; }
+
+  .section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--saffron);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section h2 .num {
+    background: var(--saffron);
+    color: white;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .section p { color: #444; margin-bottom: 10px; }
+  .section p:last-child { margin-bottom: 0; }
+
+  .highlight {
+    background: #FFFBEB;
+    border: 1px solid #FCD34D;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 12px;
+    color: #78350F;
+    font-size: 13.5px;
+  }
+
+  .contact-box {
+    background: var(--ink);
+    color: white;
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .contact-box h3 { color: var(--saffron); margin-bottom: 8px; font-size: 18px; }
+  .contact-box p { color: #BBB; font-size: 14px; }
+  .contact-box a { color: var(--saffron); text-decoration: none; font-weight: 500; }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">प</div>
+  <div class="logo-text">Prati<span>yogi</span></div>
+</header>
+
+<div class="hero">
+  <div class="badge">Legal Document</div>
+  <h1><span>Disclaimer</span></h1>
+  <p>Last updated: February 2026 &nbsp;|&nbsp; Important information for all users</p>
+</div>
+
+<div class="container">
+
+  <div class="alert-banner">
+    <h2>📌 Important Notice</h2>
+    <p>Pratiyogi is a practice and preparation tool. It is not affiliated with any official government exam body. All content is for educational purposes only.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">1</span> For Practice Purposes Only</h2>
+    <p><strong>Pratiyogi</strong> is designed exclusively as a self-study and exam preparation tool. The content, questions, scores, and performance data displayed within the app are for practice purposes only.</p>
+    <p>Using this app does not guarantee success, selection, or any specific result in any competitive examination including but not limited to UPSC, SSC, IBPS, Railway, State PSC exams, or any other government or private examination.</p>
+    <div class="highlight">
+      ⚠️ Exam preparation outcomes depend on many individual factors. Pratiyogi is a tool to aid your practice — your success is determined by your own consistent effort.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">2</span> No Official Affiliation</h2>
+    <p>Pratiyogi is an <strong>independent, privately developed</strong> application. We are not affiliated with, endorsed by, or officially connected to:</p>
+    <p>• UPSC (Union Public Service Commission)</p>
+    <p>• SSC (Staff Selection Commission)</p>
+    <p>• IBPS or any banking exam authority</p>
+    <p>• Railway Recruitment Boards (RRB)</p>
+    <p>• Any State Public Service Commission</p>
+    <p>• Any other government or official examination body</p>
+    <p>All official exam names and trademarks belong to their respective organizations.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">3</span> Previous Year Questions (PYQ)</h2>
+    <p>The Previous Year Questions available in Pratiyogi are sourced from publicly available government exam papers and are used purely for educational and practice purposes under fair use provisions.</p>
+    <p>We do not claim ownership over official government question papers. If you are an official body and have concerns about any content, please contact us and we will address it promptly.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span> Current Affairs Content</h2>
+    <p>Current affairs content in Pratiyogi is compiled from publicly available news sources and is intended to provide a general overview of recent events for exam preparation purposes.</p>
+    <p>We strive for accuracy but <strong>do not guarantee</strong> that all current affairs content is complete, error-free, or up to date at the exact moment of reading. Users are advised to cross-verify important current affairs information from authoritative sources before an exam.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span> Accuracy of Content</h2>
+    <p>While our team makes every effort to ensure that questions, answers, and explanations are accurate, we acknowledge that errors may occasionally occur. If you find an incorrect question or answer, please report it to us so we can correct it for all users.</p>
+    <p>Pratiyogi shall not be held responsible for any decision made by a user based on incorrect or outdated content within the app.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">6</span> Performance Data</h2>
+    <p>The performance scores, accuracy percentages, and rankings shown in Pratiyogi are calculated based on your in-app practice sessions only. These scores are not equivalent to, and should not be compared to, actual exam scores or official evaluation criteria used by any examination body.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">7</span> Service Availability</h2>
+    <p>Pratiyogi is provided on an "as available" basis. We do not guarantee uninterrupted access to the app. Temporary downtime may occur due to maintenance, technical issues, or factors beyond our control. We are not liable for any inconvenience caused by such interruptions.</p>
+  </div>
+
+  <div class="contact-box">
+    <h3>Found an error in our content?</h3>
+    <p>Help us improve by reporting it to</p>
+    <p><a href="mailto:learnaspratiyogi@gmail.com">learnaspratiyogi@gmail.com</a></p>
+    <p style="margin-top:6px; font-size:13px;">We appreciate every report and will fix it quickly.</p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Pratiyogi. All rights reserved. &nbsp;|&nbsp;
+  <a href="privacy-policy.html" style="color:var(--saffron);text-decoration:none;">Privacy Policy</a> &nbsp;|&nbsp;
+  
